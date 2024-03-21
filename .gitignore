@@ -1,0 +1,5 @@
+__pycache__
+models
+logs
+*solution*.pkl
+*solution*.png
