@@ -22,7 +22,7 @@ class WarehouseRobotEnv(gym.Env):
     # metadata is a required attribute
     # render_modes in our environment is either None or 'human'.
     # render_fps is not used in our env, but we are require to declare a non-zero value.
-    metadata = {"render_modes": ["human"], 'render_fps': 1}
+    metadata = {"render_modes": ["human"], 'render_fps': 4}
 
     def __init__(self, grid_rows=4, grid_cols=5, render_mode=None):
 
@@ -31,7 +31,7 @@ class WarehouseRobotEnv(gym.Env):
         self.render_mode = render_mode
 
         # Initialize the WarehouseRobot problem
-        self.warehouse_robot = wr.WarehouseRobot(grid_rows=grid_rows, grid_cols=grid_cols)
+        self.warehouse_robot = wr.WarehouseRobot(grid_rows=grid_rows, grid_cols=grid_cols, fps=self.metadata['render_fps'])
 
         # Gym requires defining the action space. The action space is robot's set of possible actions.
         # Training code can call action_space.sample() to randomly select an action. 
@@ -104,16 +104,17 @@ if __name__=="__main__":
     env = gym.make('warehouse-robot-v0', render_mode='human')
 
     # Use this to check our custom environment
-    print("Check environment begin")
-    check_env(env.unwrapped)
-    print("Check environment end")
+    # print("Check environment begin")
+    # check_env(env.unwrapped)
+    # print("Check environment end")
 
     # Reset environment
     obs = env.reset()[0]
 
     # Take some random actions
-    for i in range(10):
+    while(True):
         rand_action = env.action_space.sample()
         obs, reward, terminated, _, _ = env.step(rand_action)
 
-
+        if(terminated):
+            obs = env.reset()[0]
