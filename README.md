@@ -15,7 +15,7 @@ This is a very basic tutorial showing end-to-end how to create a custom Gymnasiu
 * v0_warehouse_robot*.py
 
 ##### YouTube Tutorial:
-<a href='https://youtu.be/AoGRjPt-vms'><img src='https://img.youtube.com/vi/AoGRjPt-vms/0.jpg' width='400' alt='Build Custom Gymnasium Env'/></a>
+<a href='https://youtu.be/AoGRjPt-vms&list=PL58zEckBH8fDt-F9LbpVASTor_jZzsxRg'><img src='https://img.youtube.com/vi/AoGRjPt-vms/0.jpg' width='400' alt='Build Custom Gymnasium Env'/></a>
 
 
 ## Custom Gym Environment part 2 - Visualization with Pygame
@@ -25,7 +25,7 @@ In part 1, we created a very simple custom Reinforcement Learning environment th
 * v0_warehouse_robot*.py
 
 ##### YouTube Tutorial:
-<a href='https://youtu.be/9t64PFO7hr0'><img src='https://img.youtube.com/vi/9t64PFO7hr0/0.jpg' width='400' alt='Build Custom Gymnasium Env with Pygame'/></a>
+<a href='https://youtu.be/9t64PFO7hr0&list=PL58zEckBH8fDt-F9LbpVASTor_jZzsxRg'><img src='https://img.youtube.com/vi/9t64PFO7hr0/0.jpg' width='400' alt='Build Custom Gymnasium Env with Pygame'/></a>
 
 
 
@@ -35,7 +35,7 @@ In part 1, we created a very simple custom Reinforcement Learning environment th
 The Box space type is used in many Gymnasium environments and you'll likely need it for your custom environment. The Box action space can be used to validate agent actions or generate random actions. The Box observation space can be used to validate the environment's state. This video explains and demos how to create boxes of different sizes/shapes, lower (low) and upper (high) boundaries, and as int/float data types.
 
 ##### YouTube Tutorial:
-<a href='https://youtu.be/hI7UDemXVsk'><img src='https://img.youtube.com/vi/hI7UDemXVsk/0.jpg' width='400' alt='How gymnasium.spaces.Box Works'/></a>
+<a href='https://youtu.be/hI7UDemXVsk&list=PL58zEckBH8fDt-F9LbpVASTor_jZzsxRg'><img src='https://img.youtube.com/vi/hI7UDemXVsk/0.jpg' width='400' alt='How gymnasium.spaces.Box Works'/></a>
 
 ## Reinforcement Learning Tutorials
 For more Reinforcement Learning and Deep Reinforcement Learning tutorials, check out my
